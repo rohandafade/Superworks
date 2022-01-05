@@ -1,0 +1,121 @@
+
+
+input,
+button {
+  display:inline-block;
+  width: 100%;
+  height: 3.23rem;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  background: rgba(#fff, .15);
+}
+ input[type="text"]::placeholder { 
+                  
+                /* Firefox, Chrome, Opera */
+                text-align: center;
+            }
+
+input[type="password"]::placeholder { 
+                  
+                /* Firefox, Chrome, Opera */
+                text-align: center;
+            }
+
+.login {
+  min-height: 100vh;
+  width: 100%;  background:url('https://raw.githubusercontent.com/mariofornaroli/y-responsive-login-page/main/images/bk.png'),#023262 ;
+  background-size: cover;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .container {
+    position: relative;
+    width: 90%;
+    max-width: 420px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+
+    color: white;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0.75rem;
+      padding: .625rem;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      cursor: pointer;
+      transition: background .3s ease-in;
+    
+      }
+    }
+  }
+  
+  .separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+     
+
+
+form {
+  width: 100%;
+  
+  .form-group{
+    margin-bottom: 1.5rem;
+    
+    label {
+      display: block;
+      letter-spacing: .5px;
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      color: dark-blue;
+    }
+    
+    input {
+      letter-spacing: .5px;
+      font-size: 1.1rem;
+      padding: 0 1.5rem;
+    }    
+  }
+}
+
+ .title-div {
+            width: 100%;
+            height: 250px;
+            border: 2px solid gray;
+            background-color: #9ddce5;
+            display: flex;
+            justify-content: center;
+        }
+        
+button[type='submit']{
+  background: #ecbb08;
+  color: #023262;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all .3s linear;
+

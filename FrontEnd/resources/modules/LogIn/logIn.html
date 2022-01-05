@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <div ng-controller="logInCtr">
+    	<section class="login">
+  <div class="container">
+    <center><h3 class="title" >Log In </h3></center>
+ <br>
+    <form name="loginForm">
+      <div class="form-group">
+        <label class="title">Name</label>
+        <input type="text" id="fullname" placeholder="Enter Your Name" ng-model="loginObj.userName" required>          
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="password"class="title">Password</label>
+        <input type="password" id="password" placeholder=" Enter Password"  ng-model="loginObj.pass" required>          
+      </div>
+      
+      <button type="submit" ng-disabled="loginForm.$invalid" ng-click="loginFun(loginObj)">Log In</button>
+    </form>
+    
+    
+  </div>
+</section>
+      </div>
+  </body>
+</html>

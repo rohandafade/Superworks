@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+</style>
+  </head>
+  <body>
+    <div ng-controller="homeCtr">
+
+<header>
+<div>
+            <h1>
+                <font color="blue" style="padding-left: 100px">SuperWorks</font>
+
+ <p style="float: right; padding-right: 100px">
+                <font color="#7aa839" size="5">Your Cart: 
+
+<i class="fa fa-shopping-cart" style="font-size:36px"></i>  &nbsp;
+                	<span style=" border: 1px solid #7aa839; padding: 6px; color:
+                    #7aa839; text-align: center;">{{count+" items"}}</span></font>
+            </p>
+
+            </h1>
+           
+        </div>
+        <hr>
+    </header>  
+
+ <div class="title-div">
+        <div>
+            <font style="color: navy; margin-top: 35px; font-size: 80px;">SuperWorks</font>
+            <h2 style="text-align: center">Sale !!</h2>
+        </div>
+    </div>
+<br>
+    <br>
+
+ <div class="container-fluid">
+<div class="row">
+	<div class="col-md-2"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping3.webp" alt="Denim Jeans" style="width:100%">
+  <h3>Qualimate pad \ tablet </h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1" >Add to Cart</button></p>
+</div>
+
+<div class="col-md-1"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping1.png" alt="Denim Jeans" style="width:100%">
+  <h3>Qubo Video DoorBell</h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1">Add to Cart</button></p>
+</div>
+
+<div class="col-md-1"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping2.png" alt="Denim Jeans" style="width:100%">
+  <h3>GOQii Smart Watch</h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1">Add to Cart</button></p>
+</div>
+<div class="col-md-2"></div>
+</div>
+
+<br>
+
+<div class="row">
+	<div class="col-md-2"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping4.webp" alt="Denim Jeans" style="width:100%;height: 50%">
+  <h3>Gizmobaba Smart Glass</h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1">Add to Cart</button></p>
+</div>
+
+<div class="col-md-1"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping5.webp" alt="Denim Jeans" style="height: 50%;width:55%">
+  <h3> Silicone Ice Cube Maker </h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1">Add to Cart</button></p>
+</div>
+
+<div class="col-md-1"></div>
+
+<div class="card col-md-2">
+  <img src="resources/assests/images/shopping6.webp" alt="Denim Jeans" style="width:100%">
+  <h3> Digital White Clock</h3>
+  <p class="price">$19.99</p>
+  <p><button ng-click="count = count + 1">Add to Cart</button></p>
+</div>
+<div class="col-md-2"></div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
